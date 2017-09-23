@@ -10,7 +10,7 @@ $obj->stringChunk_split($string);
 
 $obj->stringEcho($string);
 $obj->stringExplode($string);
-//$obj->stringRtrim();
+$obj->stringRtrim($string);
 //$obj->stringStrRepeat();
 //$obj->stringStrSplit();
   $obj->stringStrLen($string);
@@ -51,7 +51,7 @@ class main
     {
  		echo '<h1>this is the explode string</h1>';
 
- 		print_r(explode("", $string));
+ 		print_r (explode(" ", $string));
 
  		echo '<hr>';
  	}
