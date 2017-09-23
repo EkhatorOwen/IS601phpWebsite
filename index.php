@@ -6,15 +6,15 @@ $obj = new main();
 
 $string = "this is a general string";
 
-//$obj->stringChunk_split();
-//$obj->stringChr();
+$obj->stringChunk_split($string);
+//$obj->stringChr($string);
 //$obj->stringEcho();
 //$obj->stringExplode();
 //$obj->stringRtrim();
 //$obj->stringStrRepeat();
 //$obj->stringStrSplit();
   $obj->stringStrLen($string);
-
+$obj->stringChunk_split($string);
 
 
 class main
