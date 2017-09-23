@@ -11,8 +11,8 @@ $obj->stringChunk_split($string);
 $obj->stringEcho($string);
 $obj->stringExplode($string);
 $obj->stringRtrim($string);
-//$obj->stringStrRepeat();
-//$obj->stringStrSplit();
+$obj->stringStrRepeat($string);
+$obj->stringStrSplit($string);
   $obj->stringStrLen($string);
   $obj->stringChr($string);
 
@@ -62,7 +62,8 @@ class main
 
       echo '<h1>this is the rtrim string</h1>';
 
-       rtrim($string, "string");
+       echo rtrim($string, "string");
+	
 	echo '<br>';
 	}
 
