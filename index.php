@@ -8,8 +8,8 @@ $string = "this is a general string";
 
 $obj->stringChunk_split($string);
 
-$obj->stringEcho();
-//$obj->stringExplode();
+$obj->stringEcho($string);
+$obj->stringExplode($string);
 //$obj->stringRtrim();
 //$obj->stringStrRepeat();
 //$obj->stringStrSplit();
