@@ -16,6 +16,7 @@ $obj->stringStrSplit($string);
   $obj->stringStrLen($string);
   $obj->stringChr($string);
 
+$obj->stringStrupper($string);
 
 class main
 
