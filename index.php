@@ -7,14 +7,14 @@ $obj = new main();
 $string = "this is a general string";
 
 $obj->stringChunk_split($string);
-//$obj->stringChr($string);
-//$obj->stringEcho();
+
+$obj->stringEcho();
 //$obj->stringExplode();
 //$obj->stringRtrim();
 //$obj->stringStrRepeat();
 //$obj->stringStrSplit();
   $obj->stringStrLen($string);
-$obj->stringChr$string);
+  $obj->stringChr($string);
 
 
 class main
@@ -29,11 +29,8 @@ class main
 	{
 
 		echo '<h1> This is the Chr string </h1>';
-		
-		echo '<br>';
-
-		$string = char(046);
-		echo "the char function returns:".$string;
+		$str = chr(61);
+		echo 'the char function returns: '.$str;
 	}
 	function stringChunk_split($string)
 	{
