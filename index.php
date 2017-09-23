@@ -13,10 +13,10 @@ $obj->stringExplode($string);
 $obj->stringRtrim($string);
 $obj->stringStrRepeat($string);
 $obj->stringStrSplit($string);
-  $obj->stringStrLen($string);
-  $obj->stringChr($string);
-
+$obj->stringStrLen($string);
+$obj->stringChr($string);
 $obj->stringStrupper($string);
+$obj->stringStrlower($string);
 
 class main
 
@@ -71,6 +71,8 @@ class main
     function stringStrRepeat($string)
 	{
 	echo '<h1>this is the str_repeat string string</h1>';
+	
+	echo '<br>';
 	echo str_repeat($string, 3);
 	echo '<hr>';
 	 }
@@ -117,7 +119,7 @@ class main
     {
     	echo '<h1>this is the strupper string</h1>';
 
-    	echo "the upper case of the string is".strtoupper($string);
+    	echo "the upper case of the string is: ".strtoupper($string);
 
     	echo '<hr>';
 
