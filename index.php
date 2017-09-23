@@ -14,7 +14,7 @@ $obj->stringChunk_split($string);
 //$obj->stringStrRepeat();
 //$obj->stringStrSplit();
   $obj->stringStrLen($string);
-$obj->stringChunk_split($string);
+$obj->stringChr$string);
 
 
 class main
