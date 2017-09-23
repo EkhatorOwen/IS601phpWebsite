@@ -70,7 +70,7 @@ class main
     function stringStrRepeat($string)
 	{
 	echo '<h1>this is the str_repeat string string</h1>';
-	str_repeat($string, 3);
+	echo str_repeat($string, 3);
 	echo '<hr>';
 	 }
 
