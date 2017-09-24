@@ -18,7 +18,7 @@ $obj->stringChr($string);
 $obj->stringStrupper($string);
 $obj->stringStrlower($string);
 $obj->arraychangekeycase($array);
-
+$obj->arraychunk($array);
 class main
 
 {
@@ -133,12 +133,25 @@ class main
       {
 
       echo '<h1>This is the array change key case function</h1>';
+      
+     $test = array("a"=>"Cat","B"=>"Dog", "c"=>"Horse","b"=>"Bird");
 
-      print_r(array_change_key_case($array,CASE_UPPER));
+
+      print_r(array_change_key_case($test,CASE_UPPER));
 
       echo '<hr>';
 
 
+      }
+
+      function arraychunk($array)
+      {
+       
+       echo '<h1>This is the array_chunk function   </hr>';
+       print_r(array_chunk($array,3);
+       echo '<hr>';
+
+    
       }
 
 }
