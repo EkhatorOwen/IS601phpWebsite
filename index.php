@@ -54,18 +54,29 @@ $obj->arrayflip($array);
 $obj->multisortarray($array,$array2);
 $obj->arraypush($array);
 $obj->arraysum();
+$obj->countarray($array);
 class main
 
 {
 
 	function __construct()
 	{
-		echo '<h1>Find 10 Strings Below </h1>';
+		echo '<h1>Find 10 Strings Functions and 10 Array fucntions Below </h1>';
 	        
 		echo '<h2>The string used in this excercise is: This is a
 		General String </h2>';
 	
 	}
+
+	function __destruct()
+	{
+	 echo "<h2>This is the end</h2>";
+
+	 }
+
+
+
+
 	function stringChr($string)
 	{
 
