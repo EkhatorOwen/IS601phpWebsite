@@ -4,8 +4,8 @@
 
 $obj = new main();
 
-$string = "this is a general string";
-
+$string = "This is a General String";
+$array = array("one","two","three","four","five","six","seven");
 $obj->stringChunk_split($string);
 
 $obj->stringEcho($string);
@@ -17,6 +17,7 @@ $obj->stringStrLen($string);
 $obj->stringChr($string);
 $obj->stringStrupper($string);
 $obj->stringStrlower($string);
+$obj->arraychangekeycase($array);
 
 class main
 
@@ -25,6 +26,10 @@ class main
 	function __construct()
 	{
 		echo '<h1>Find 10 Strings Below </h1>';
+	        
+		echo '<h2>The string used in this excercise is: This is a
+		General String </h2>';
+	
 	}
 	function stringChr($string)
 	{
@@ -124,5 +129,17 @@ class main
     	echo '<hr>';
 
     }
+      function arraychangekeycase($array)
+      {
+
+      echo '<h1>This is the array change key case function</h1>';
+
+      print_r(array_change_key_case($array,CASE_UPPER));
+
+      echo '<hr>';
+
+
+      }
+
 }
 ?>
