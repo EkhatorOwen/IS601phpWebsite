@@ -63,8 +63,14 @@ class main
 	{
 		echo '<h1>Find 10 Strings Functions and 10 Array fucntions Below </h1>';
 	        
-		echo '<h2>The string used in this excercise is: This is a
-		General String </h2>';
+		echo '<h3>The string used in this excercise is: This is a
+		General String </h3>';
+		
+		echo '<br>';
+
+		echo '<h3>three sets of arrays were used in this excercise: the
+		indexed array,the associative array and the multidimentional
+		array</h3>';
 	
 	}
 
