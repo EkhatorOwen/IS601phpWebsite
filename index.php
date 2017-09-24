@@ -50,6 +50,7 @@ $obj->arraychunk($array);
 $obj->arraycolumn($multi);
 $obj->arraycombine($array,$array2);
 $obj->arrayfill();
+$obj->arrayflip($array);
 class main
 
 {
@@ -219,10 +220,23 @@ class main
 	function arrayflip($array)
 	{
 	echo '<h1>This is the array flip function</h1>';
+	
+	
 	print_r(array_flip($array));
 	echo '<hr>';
 	
 	}
+ 
+      function multisortarray($array,$array2)
+      {
+	echo '<h1>This is a multisort array function </hr>';
+	array_multisort($array, $array2);
+
+	echo '<hr>';
+
+
+      }
+
 
 
 }
