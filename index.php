@@ -51,6 +51,8 @@ $obj->arraycolumn($multi);
 $obj->arraycombine($array,$array2);
 $obj->arrayfill();
 $obj->arrayflip($array);
+$obj->multisortarray($array,$array2);
+
 class main
 
 {
@@ -229,11 +231,21 @@ class main
  
       function multisortarray($array,$array2)
       {
-	echo '<h1>This is a multisort array function </hr>';
+	echo '<h1>This is a multisort array function </h1>';
+	echo '<br>';
 	array_multisort($array, $array2);
-
+	var_dump($array);
+	var_dump($array2);
+	
 	echo '<hr>';
 
+
+      }
+      function arraypush()
+      {
+	echo '<h1>This is the array_push function </h1>';
+	array_push($string, "eight", "nine");
+	print_r($string);
 
       }
 
