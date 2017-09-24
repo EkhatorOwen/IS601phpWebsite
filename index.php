@@ -52,7 +52,7 @@ $obj->arraycombine($array,$array2);
 $obj->arrayfill();
 $obj->arrayflip($array);
 $obj->multisortarray($array,$array2);
-
+$obj->arraypush($array);
 class main
 
 {
@@ -241,14 +241,29 @@ class main
 
 
       }
-      function arraypush()
+      function arraypush($array)
       {
 	echo '<h1>This is the array_push function </h1>';
-	array_push($string, "eight", "nine");
-	print_r($string);
-
+	array_push($array, "eight", "nine");
+	print_r($array);
+	echo '<hr>';
       }
+	function array_sum()
+	{
+	  echo '<h1>This is the array sum fuunction </h1>';
+	  
+	  $a = $array(2,3,4,5);
 
+	  array_sum($a);
+		
+	print_r($a);
+
+	echo '<hr>';
+
+
+
+
+	}
 
 
 }
