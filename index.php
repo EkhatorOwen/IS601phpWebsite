@@ -53,6 +53,7 @@ $obj->arrayfill();
 $obj->arrayflip($array);
 $obj->multisortarray($array,$array2);
 $obj->arraypush($array);
+$obj->arraysum();
 class main
 
 {
@@ -248,15 +249,13 @@ class main
 	print_r($array);
 	echo '<hr>';
       }
-	function array_sum()
+	function arraysum()
 	{
-	  echo '<h1>This is the array sum fuunction </h1>';
+	  echo '<h1>This is the array sum function </h1>';
 	  
-	  $a = $array(2,3,4,5);
+	  $a = array(2,3,4,5);
 
-	  array_sum($a);
-		
-	print_r($a);
+	echo array_sum($a);
 
 	echo '<hr>';
 
@@ -264,7 +263,17 @@ class main
 
 
 	}
+	function countarray($array)
+	{
+	echo '<h1>This is the count array</h1>';
 
+	echo "the count of the array is ".count($array);
+
+	echo '<hr>';
+	
+	
+	
+	}
 
 }
 ?>
