@@ -7,7 +7,7 @@ $obj = new main();
 $string = "This is a General String";
 $array = array("one","two","three","four","five","six","seven");
 $test = array('a'=>'Cat','B'=>'Dog', 'c'=>'Horse','b'=>'Bird');
-$array2 = array("a","b","c","d","e"); 
+$array2 = array("a","b","c","d","e","f","g"); 
 $multi =array(
 
 	array(
@@ -48,8 +48,8 @@ $obj->stringStrlower($string);
 $obj->arraychangekeycase($test);
 $obj->arraychunk($array);
 $obj->arraycolumn($multi);
-$obj->arraycombine($array,$array2)
-
+$obj->arraycombine($array,$array2);
+$obj->arrayfill();
 class main
 
 {
@@ -198,19 +198,23 @@ class main
 
         }
 
-	function arraycombine($array,$array2);
+	function arraycombine($array,$array2)
 	{
 	
 	
-	echo '<h1>This is an arraycombine function </h1>';
+	echo '<h1>This is an array_combine function </h1>';
         $array3 = array_combine($array,$array2);
-
+	print_r($array3);
 	echo '<br>';
 	
 
 	}
+ 	function arrayfill()
+	{
+	$a = array_fill(0,7,'Owen');
+	print_r($a);
 
-
+	}
 
 }
 ?>
