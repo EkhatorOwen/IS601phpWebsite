@@ -207,14 +207,23 @@ class main
 	print_r($array3);
 	echo '<br>';
 	
-
+        echo '<hr>';
 	}
  	function arrayfill()
 	{
+	echo '<h1>This is the array fill function</h1>';
 	$a = array_fill(0,7,'Owen');
 	print_r($a);
-
+	echo '<hr>';
 	}
+	function arrayflip($array)
+	{
+	echo '<h1>This is the array flip function</h1>';
+	print_r(array_flip($array));
+	echo '<hr>';
+	
+	}
+
 
 }
 ?>
