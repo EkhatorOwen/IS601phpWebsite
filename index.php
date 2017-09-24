@@ -19,6 +19,7 @@ $obj->stringStrupper($string);
 $obj->stringStrlower($string);
 $obj->arraychangekeycase($array);
 $obj->arraychunk($array);
+$obj->arraycolumn($array);
 class main
 
 {
@@ -147,12 +148,26 @@ class main
       function arraychunk($array)
       {
        
-       echo '<h1>This is the array_chunk function   </hr>';
-       print_r(array_chunk($array,3);
+       echo '<h1>This is the array_chunk function</h1>';
+       echo '<br>';
+       
+       print_r(array_chunk($array,2));
        echo '<hr>';
 
     
       }
+
+      function arraycolumn()
+	{
+       
+       echo '<h1>This is an array_column function </h1>';
+
+       print_r($array,2); 
+
+       echo '<hr>';
+
+        }
+
 
 }
 ?>
