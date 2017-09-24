@@ -6,6 +6,34 @@ $obj = new main();
 
 $string = "This is a General String";
 $array = array("one","two","three","four","five","six","seven");
+$test = array('a'=>'Cat','B'=>'Dog', 'c'=>'Horse','b'=>'Bird');
+$array2 = array("a","b","c","d","e"); 
+$multi =array(
+
+	array(
+	'firsname' => 'Owen',
+	'lastname' => 'Ekahtor',
+	'country' => 'Nigria',
+	
+	
+	),
+
+	array (
+	'firstname'=>'James',
+	'lastname'=>'Churchil',
+	'country' =>'England',
+
+	),
+
+
+	array(
+	'firstname'=>'Boris',
+	'lastname'=>'Mann',
+	'country'=>'USA',
+
+	)	
+
+);
 $obj->stringChunk_split($string);
 
 $obj->stringEcho($string);
@@ -17,9 +45,11 @@ $obj->stringStrLen($string);
 $obj->stringChr($string);
 $obj->stringStrupper($string);
 $obj->stringStrlower($string);
-$obj->arraychangekeycase($array);
+$obj->arraychangekeycase($test);
 $obj->arraychunk($array);
-$obj->arraycolumn($array);
+$obj->arraycolumn($multi);
+$obj->arraycombine($array,$array2)
+
 class main
 
 {
@@ -130,12 +160,12 @@ class main
     	echo '<hr>';
 
     }
-      function arraychangekeycase($array)
+      function arraychangekeycase($test)
       {
 
       echo '<h1>This is the array change key case function</h1>';
       
-     $test = array("a"=>"Cat","B"=>"Dog", "c"=>"Horse","b"=>"Bird");
+
 
 
       print_r(array_change_key_case($test,CASE_UPPER));
@@ -151,22 +181,35 @@ class main
        echo '<h1>This is the array_chunk function</h1>';
        echo '<br>';
        
-       print_r(array_chunk($array,2));
+       print_r(array_chunk($array,"2"));
        echo '<hr>';
 
     
       }
 
-      function arraycolumn()
+      function arraycolumn($multi)
 	{
        
        echo '<h1>This is an array_column function </h1>';
 
-       print_r($array,2); 
+       print_r(array_column($multi,'country')); 
 
        echo '<hr>';
 
         }
+
+	function arraycombine($array,$array2);
+	{
+	
+	
+	echo '<h1>This is an arraycombine function </h1>';
+        $array3 = array_combine($array,$array2);
+
+	echo '<br>';
+	
+
+	}
+
 
 
 }
