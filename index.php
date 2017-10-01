@@ -34,27 +34,28 @@ $multi =array(
 	)	
 
 );
-$obj->stringChunk_split($string);
+stringFunction::stringChunk_split($string);
 
-$obj->stringEcho($string);
-$obj->stringExplode($string);
-$obj->stringRtrim($string);
-$obj->stringStrRepeat($string);
-$obj->stringStrSplit($string);
-$obj->stringStrLen($string);
-$obj->stringChr($string);
-$obj->stringStrupper($string);
-$obj->stringStrlower($string);
-$obj->arraychangekeycase($test);
-$obj->arraychunk($array);
-$obj->arraycolumn($multi);
-$obj->arraycombine($array,$array2);
-$obj->arrayfill();
-$obj->arrayflip($array);
-$obj->multisortarray($array,$array2);
-$obj->arraypush($array);
-$obj->arraysum();
-$obj->countarray($array);
+stringFunction::stringEcho($string);
+stringFunction::stringExplode($string);
+stringFunction::stringRtrim($string);
+stringFunction::stringStrRepeat($string);
+stringFunction::stringStrSplit($string);
+stringFunction::stringStrLen($string);
+stringFunction::stringChr($string);
+stringFunction::stringStrupper($string);
+stringFunction::stringStrlower($string);
+arrayFunction::arraychangekeycase($test);
+arrayFunction::arraychunk($array);
+arrayFunction::arraycolumn($multi);
+arrayFunction::arraycombine($array,$array2);
+arrayFunction::arrayfill();
+arrayFunction::arrayflip($array);
+arrayFunction::multisortarray($array,$array2);
+arrayFunction::arraypush($array);
+arrayFunction::arraysum();
+arrayFunction::countarray($array);
+ 
 class main
 
 {
@@ -66,10 +67,10 @@ class main
 		echo '<h3>The string used in this excercise is: This is a
 		General String </h3>';
 		
-		echo '<br>';
+		
 
 		echo '<h3>three sets of arrays were used in this excercise: the
-		indexed array,the associative array and the multidimentional
+		indexed array, the associative array and the multidimentional
 		array</h3>';
 	
 	}
@@ -80,7 +81,10 @@ class main
 
 	 }
 
+}
 
+class stringFunction
+{
 
 
 	function stringChr($string)
@@ -122,7 +126,7 @@ class main
 
        echo rtrim($string, "string");
 	
-	echo '<br>';
+	echo '<hr>';
 	}
 
     function stringStrRepeat($string)
@@ -172,6 +176,8 @@ class main
 
     }
 
+
+
     function stringStrupper($string)
     {
     	echo '<h1>this is the strupper string</h1>';
@@ -181,6 +187,10 @@ class main
     	echo '<hr>';
 
     }
+    }
+
+class arrayFunction
+{
       function arraychangekeycase($test)
       {
 
@@ -293,4 +303,5 @@ class main
 	}
 
 }
+
 ?>
